@@ -22,8 +22,21 @@ namespace MultiThreading.Task6.Continuation
             Console.WriteLine("Demonstrate the work of the each case with console utility.");
             Console.WriteLine();
 
-            // feel free to add your code
+            TaskA.Execute();
+            Console.WriteLine("");
+            Console.WriteLine("Press a key to continue with B");
+            Console.ReadKey();
+            TaskB.Execute();
 
+            Console.WriteLine("");
+            Console.WriteLine("Press a key to continue with C");
+            Console.ReadKey();
+            TaskC.Execute();
+
+            Console.WriteLine("");
+            Console.WriteLine("Press a key to continue with D");
+            Console.ReadKey();
+            TaskD.Execute();
             Console.ReadLine();
         }
     }
